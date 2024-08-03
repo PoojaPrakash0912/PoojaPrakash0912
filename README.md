@@ -1,16 +1,3 @@
--{
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
-}
 import express from 'express';
 import mongoose from 'mongoose';
 import axios from 'axios';
@@ -59,6 +46,7 @@ app.get('/api/stocks/:symbol', async (req: Request, res: Response) => {
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
 
 
 <!---
